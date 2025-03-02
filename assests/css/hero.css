@@ -1,0 +1,31 @@
+#hero {
+    @apply xl:h-hero;
+    
+    .center__layout {
+        @apply flex gap-8 h-full w-full xl:w-[1280px] max-w-7xl;
+    }
+    
+    .main__layout {
+        @apply w-full flex flex-col-reverse xl:flex-row justify-between items-center relative;
+    }
+
+    .hero__content {
+        @apply px-2 mt-8 xl:mt-0 xl:px-0 xl:w-[636px] relative;     
+    }
+    
+    .hero__welcome {
+        @apply xl:h-[264px] flex flex-col justify-end;
+    }
+    
+    .hero__content-heading {
+        @apply flex flex-col gap-1 md:gap-5;
+    }
+    
+    .description__text {
+        @apply mt-4 md:mt-8 xl:w-[600px] h-44 xl:h-auto;
+    }   
+    
+    .social__media {
+        @apply absolute bottom-0 left-0 px-2 gap-5 xl:px-0;
+    }   
+}

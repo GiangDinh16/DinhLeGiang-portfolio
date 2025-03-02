@@ -1,0 +1,55 @@
+.container#contact {
+  @apply h-full xl:h-contact;
+  
+  .center__layout {
+    @apply h-full flex flex-col items-center justify-center xl:flex-row;
+  }
+  
+  .contact__form-container {
+    @apply flex flex-1 w-full mt-10 xl:mt-0 px-2 xl:px-0;
+    
+    .contact__form {
+      @apply flex flex-col gap-y-5 w-full xl:w-4/5 xl:ml-8;
+    }
+    
+    textarea {
+      @apply resize-none;
+    }
+  }
+
+  .contact__content {
+    @apply px-2 flex-1 mt-10 h-auto xl:px-0 xl:mt-0;
+  }
+  
+  .description__text {
+    @apply mt-5;
+  }
+
+  .contact__heading {
+    @apply flex flex-col gap-3;
+  }
+    
+  .contact__social {
+    @apply flex flex-col md:flex-row gap-6;
+    
+    .contact__social-action {
+      @apply text-xl font-semibold py-4 px-5 w-fit;
+    }
+    
+    .social__media {
+      @apply gap-6;
+    }
+  }
+}
+
+.connections {
+  @apply flex flex-col gap-4 mt-10;
+
+  .connection__item {
+    @apply flex items-center gap-6;
+  }
+
+  a {
+    @apply text-base xl:text-2xl font-semibold;
+  }
+}

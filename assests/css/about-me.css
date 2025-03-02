@@ -1,0 +1,77 @@
+#about-me {
+  @apply mt-20 xl:mt-0 xl:h-[638px] flex justify-between gap-8;
+
+  .center__layout {
+    @apply w-full my-auto flex flex-col xl:flex-row items-start gap-20;
+  }
+
+  .about-me__content {
+    @apply w-full px-2 xl:px-0 xl:w-1/2;
+  }
+
+  .about-me__image {
+    @apply w-full xl:w-auto;
+
+    img {
+      @apply w-full md:w-4/5 xl:w-full mx-auto;
+    }
+  }
+
+  .description__text {
+    @apply mt-5;
+  }
+  
+  .tabs.desktop,
+  .tab-content.desktop {
+    @apply hidden md:flex;
+  }
+  
+  .tabs.mobile,
+  .tab-content.mobile {
+    @apply flex md:hidden;
+  }
+  
+  
+  .tabs {
+    @apply mt-11 flex flex-col md:flex-row justify-between;
+  }
+  
+  .tab .active {
+    @apply bg-red-500;
+  }
+
+  .tab-content {
+    
+    #expertise-mobile,
+    #expertise.active {
+      @apply flex gap-1 md:gap-4;
+
+      .expertise__icon {
+        @apply flex gap-4 flex-nowrap;
+      }
+    }
+
+    #experience-mobile,
+    #experience.active {
+      @apply flex flex-col gap-y-11;
+
+      .time {
+        @apply font-normal;
+      }
+    }
+
+    #education-mobile,
+    #education.active {
+      @apply flex flex-col gap-y-11;
+
+      .cover {
+        @apply flex flex-col gap-y-3;
+      }
+
+      .time,
+      .location {
+        @apply font-normal;
+      }
+    }
+  }
+}

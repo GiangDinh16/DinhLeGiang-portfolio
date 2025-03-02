@@ -1,0 +1,47 @@
+/* Header */
+header {
+  @apply h-header p-4 xl:px-0;
+  
+
+  .header__logo {
+    @apply flex items-center gap-3;
+    
+    .logo__name {
+      @apply text-xl font-bold;
+    }
+  }
+
+  .center__layout {
+    @apply flex justify-between h-full pb-0;  
+  }
+
+  .header__navigation {
+    @apply hidden md:flex gap-8 font-semibold;
+  }
+  
+  .header__hamburger {
+    @apply md:hidden;
+  }
+
+  .header__download {
+    @apply hidden md:flex;
+    
+    img {
+      @apply h-5 w-5;
+    }
+  }
+  
+  .header__navigation_mobile {
+    @apply h-0 mt-[theme(height.header)] absolute top-0 left-0 w-full md:hidden;
+  }
+
+  .header__navigation_mobile.open {
+    @apply bg-third z-40 flex flex-col justify-start items-center h-screen md:hidden;  
+    
+    .header__navigation {
+      @apply flex flex-col items-start w-full p-4 md:hidden;
+    }
+    
+  }
+}
+

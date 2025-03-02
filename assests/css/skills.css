@@ -1,0 +1,36 @@
+.container#skills {
+  @apply bg-primary h-full xl:h-skills text-primary-text;
+
+  .heading__text {
+    @apply my-10;
+  }
+
+  .skills__container {
+    @apply mx-auto max-w-7xl flex flex-col justify-center items-center h-full;
+  }
+
+  .skills__lists {
+    @apply w-full px-4 md:grid-cols-2 xl:px-0 grid grid-cols-1 xl:grid-cols-3 gap-2;
+  }
+
+  .skills__item {
+    @apply rounded-2xl h-64 w-full border border-third flex flex-col xl:text-center hover:xl:text-start items-center justify-center text-xl hover:bg-gradient-to-t hover:from-third/20 hover:to-transparent;
+  }
+  
+  .skills__item:hover  hr,
+  .skills__item:hover  skills__item-description {
+    @apply block;
+  }
+
+  hr {
+    @apply block xl:hidden w-40 h-1 my-2 xl:my-0 xl:absolute left-0 bg-third rounded-sm;
+  }
+
+  .skills__item-title {
+    @apply transition-transform duration-300 group-hover:-translate-y-4 w-4/5 relative;
+  }
+
+  .skills__item-description {
+    @apply text-xs xl:text-base w-4/5 xl:hidden transition-opacity duration-500 group-hover:block group-hover:opacity-100;
+  }
+}
