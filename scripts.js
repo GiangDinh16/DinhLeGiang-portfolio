@@ -23,7 +23,7 @@ function changeTab(event, targetId) {
 
 function downloadCV() {
   const link = document.createElement("a")
-  link.href = "/assests/images/cv.png" // Ensure this path is correct
+  link.href = "./assests/images/cv.png" // Ensure this path is correct
   link.download = "CV_DinhLeDinh.png" // Set the downloaded file name
   document.body.appendChild(link)
   link.click()
