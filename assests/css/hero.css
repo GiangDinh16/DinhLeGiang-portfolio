@@ -20,6 +20,10 @@
     .hero__content-heading {
         @apply flex flex-col gap-1 md:gap-5;
     }
+
+    .heading__text-outlined {
+        @apply font-extrabold;
+    }
     
     .description__text {
         @apply mt-4 md:mt-8 xl:w-[600px] h-44 xl:h-auto;
@@ -27,5 +31,5 @@
     
     .social__media {
         @apply absolute bottom-0 left-0 px-2 gap-5 xl:px-0;
-    }   
+      }
 }
